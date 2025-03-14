@@ -1,12 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const FlashSalesHead = () => {
-  const time = [
-    { text: ["Days", "03"] },
-    { text: ["Hours", "23"] },
-    { text: ["Minutes", "19"] },
-    { text: ["Seconds", "56"] },
-  ];
   return (
     <div className="w-full">
       <div className=" flex items-center">
@@ -39,8 +33,8 @@ const FlashSalesHead = () => {
           </div>
         </div>
         <div className="flex flex-1/4 justify-end space-x-3">
-        <FontAwesomeIcon icon={faArrowLeft} className="bg-gray-200 p-3 rounded-full text-2xl" />
-        <FontAwesomeIcon icon={faArrowRight} className="bg-gray-200 p-3 rounded-full text-2xl" />
+        <FontAwesomeIcon icon={faArrowLeft} className="bg-gray-200 p-3 rounded-full text-2xl cursor-pointer" />
+        <FontAwesomeIcon icon={faArrowRight} className="bg-gray-200 p-3 rounded-full text-2xl cursor-pointer" />
         </div>
       </div>
     </div>
