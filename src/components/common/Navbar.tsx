@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="flex bg-white text-black items-center lg:h-16">
       <div className="flex-1">
-        <h1 className="text-3xl font-bold flex justify-center">Exclusive</h1>
+        <h1 className="text-3xl font-bold">Exclusive</h1>
       </div>
       <div className="flex-1 space-x-10">
         {items.map((item) => (

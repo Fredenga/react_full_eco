@@ -12,7 +12,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex-1/3 flex justify-center ">
+    <div className="flex-1/3">
       <ul className="space-y-4">
         {items.map((item) => (
           <li>{item}</li>
