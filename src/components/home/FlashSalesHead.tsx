@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const FlashSalesHead = () => {
   const time = [
     { text: ["Days", "03"] },
@@ -15,27 +17,30 @@ const FlashSalesHead = () => {
         <div className="flex-1/4">
           <h1 className="text-4xl font-semibold">Flash Sales</h1>
         </div>
-        <div className="flex flex-3/4 items-center space-x-2">
+        <div className="flex flex-2/4 items-center space-x-5 text-2xl font-bold">
           <div className="">
             <p>Days</p>
             <p>03</p>
           </div>
-          <span>:</span>
+          <span className="text-red-500">:</span>
           <div className="">
             <p>Hours</p>
             <p>23</p>
           </div>
-          <span>:</span>
+          <span className="text-red-500">:</span>
           <div className="">
             <p>Minutes</p>
             <p>19</p>
           </div>
-          <span>:</span>
+          <span className="text-red-500">:</span>
           <div className="">
             <p>Seconds</p>
             <p>56</p>
           </div>
-          <span>:</span>
+        </div>
+        <div className="flex flex-1/4 justify-end space-x-3">
+        <FontAwesomeIcon icon={faArrowLeft} className="bg-gray-200 p-3 rounded-full text-2xl" />
+        <FontAwesomeIcon icon={faArrowRight} className="bg-gray-200 p-3 rounded-full text-2xl" />
         </div>
       </div>
     </div>
